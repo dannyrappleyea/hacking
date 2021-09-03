@@ -1,3 +1,2 @@
-# Git Notes Template
-
-Use this template to create a git-notes repository.
+# Hacking Notes
+This is a collection of notes about hacking and penetration testing, with a mixture of techniques, tools, and links.
