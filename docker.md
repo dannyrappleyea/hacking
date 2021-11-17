@@ -29,8 +29,8 @@ docker container ls -a
 2) Use the container to create a new image. Push the image into the repository under the ```latest``` tag. This uses a temporary image name called ```hacked-image```. It may be possible to commit directly into ```<target-image>:latest```, but haven't tried yet.
 
 ```
-docker commit -m "hacked" <container-name> hacked-image:latest
-docker image tag hacked-image:latest <target-image>:latest
+docker commit -m "hacked" <container-name> hacked-image
+docker image tag hacked-image:latest <target-image>
 docker image ls
-docker image push <server>/<target-image>:latest
+docker image push <server>/<target-image>
 ```
