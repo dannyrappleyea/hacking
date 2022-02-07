@@ -167,5 +167,3 @@ aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --r
     "protocol":"any"
 }
 ```
-
-# AWS Organizations
