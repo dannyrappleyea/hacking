@@ -66,6 +66,18 @@ Assuming a role. The role session name is a required field but can be anything.
 aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --role-session-name AWSCLI-Session
 ```
 
+## Assume role via .aws/config file
+Using EC2 IAM role
+```
+[target-role]
+role_arn = arn:aws:iam::222222222222:role/efgh
+credential_source = Ec2InstanceMetadata
+```
+then
+```
+aws sts get-caller-identity --profile target-role
+```
+
 ## References
 * [How to use trust policies with IAM roles](https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/)
 * [AWS JSON policy elements: Principal - AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html)
