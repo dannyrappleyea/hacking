@@ -66,6 +66,12 @@ Assuming a role. The role session name is a required field but can be anything.
 aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --role-session-name AWSCLI-Session
 ```
 
+### get-account-authorization-details
+The get-account-authorization-details command returns all users, roles and policies, basically everything that's needed to hack accounts.
+```
+aws iam get-account-authorization-details
+```
+
 ## Assume role via .aws/config file
 Using EC2 IAM role
 ```

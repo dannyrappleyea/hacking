@@ -167,3 +167,9 @@ aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --r
     "protocol":"any"
 }
 ```
+
+# Cloudformation
+## Creating user via cloudformation
+```
+aws cloudformation create-stack --stack-name myuser --template-body file://user.yaml --capabilities CAPABILITY_NAMED_IAM
+```
