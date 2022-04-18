@@ -173,3 +173,7 @@ aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --r
 ```
 aws cloudformation create-stack --stack-name myuser --template-body file://user.yaml --capabilities CAPABILITY_NAMED_IAM
 ```
+
+# References
+* [AWS - Pentest Book](https://pentestbook.six2dez.com/enumeration/cloud/aws)
+* [GitHub - RhinoSecurityLabs/pacu: The AWS exploitation framework, designed for testing the security of Amazon Web Services environments.](https://github.com/RhinoSecurityLabs/pacu)

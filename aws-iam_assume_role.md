@@ -87,3 +87,7 @@ aws sts get-caller-identity --profile target-role
 ## References
 * [How to use trust policies with IAM roles](https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/)
 * [AWS JSON policy elements: Principal - AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html)
+* [Investigating Privilege Escalation Methods in AWS | Bishop Fox](https://bishopfox.com/blog/privilege-escalation-in-aws)
+* [iam-vulnerable | BishopFox](https://github.com/BishopFox/iam-vulnerable)
+* [AWS IAM Privilege Escalation – Methods and Mitigation](https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/)
+* [AWS IAM Privilege Escalation Techniques - Hacking The Cloud](https://hackingthe.cloud/aws/exploitation/iam_privilege_escalation/)
