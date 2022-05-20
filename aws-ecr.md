@@ -47,7 +47,7 @@ After pulling an image, inspecting it might give hints on where to look for inte
 ```docker inspect <aws-account-number>.dkr.ecr.<region>.amazonaws.com/<repository-name>```
 
 ## Hacking an image
-If the ECR repository allows, hack the docker image and upload into the repository. See [docker](me-public/hacking/docker.md) for instructions. When pushing the image back into the repository, use the AWS repository format.
+If the ECR repository allows, hack the docker image and upload into the repository. See [docker](shared/hacking/docker.md) for instructions. When pushing the image back into the repository, use the AWS repository format.
 
 ```
 docker image push <aws-account-number>.dkr.ecr.<region>.amazonaws.com/<repository-name>:latest
