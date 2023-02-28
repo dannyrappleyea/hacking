@@ -1,7 +1,6 @@
----
-tags: a/note
----
-in:: [[hacking]]
+is:: [[software]]
+from:: [[hacking]]
+in:: [[hacking tools]]
 
 # Notes
 Tool to create a man-in-the-middle proxy to manipulate traffic using python.

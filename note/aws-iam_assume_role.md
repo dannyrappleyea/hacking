@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking aws]]
+is:: [[note]]
+from:: [[hacking aws]]
 
 # Notes
 The standard way for services in one AWS account to do things in another AWS account is for a service to "assume a role" in the other account. It's elegant when done well. But it's so pervasive that it can easily become a tangled mess, and exploitable, making it a primary method of lateral movement within AWS accounts.

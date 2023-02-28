@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking aws]]
+is:: [[note]]
+from:: [[hacking aws]]
 
 # Notes
 AWS [ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) is Amazon's Docker repository service. Getting access could allow for:

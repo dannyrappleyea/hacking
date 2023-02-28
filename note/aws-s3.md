@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking aws]]
+is:: [[note]]
+from:: [[hacking aws]]
 
 # Notes
 AWS S3

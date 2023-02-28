@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking web services]]
+is:: [[note]]
+from:: [[hacking web services]]
 
 # Notes
 Writing Into HTML DOM

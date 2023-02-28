@@ -1,7 +1,6 @@
----
-tags: a/note
----
-in:: [[hacking]]
+is:: [[software]]
+from:: [[hacking]]
+in:: [[hacking tools]]
 
 # Notes
 https://github.com/projectdiscovery/interactsh

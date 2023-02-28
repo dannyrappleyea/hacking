@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking aws]]
+is:: [[note]]
+from:: [[hacking aws]]
 
 # Notes
 AWS Organizations are used to manage large numbers of AWS accounts grouped in a heirarchy.

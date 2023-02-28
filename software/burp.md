@@ -1,6 +1,8 @@
 ---
-tags: a/note
+aliases: burp suite professional
 ---
+is:: [[software]]
+from:: [[hacking]]
 in:: [[hacking tools]]
 
 # Notes

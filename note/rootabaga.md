@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking]]
+is:: [[note]]
+from:: [[hacking]]
 
 # Notes
 Rootabaga is a covert network hacking device to plug into internal networks, creating your own remote-access backdoor.

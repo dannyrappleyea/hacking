@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking]]
+is:: [[note]]
+from:: [[hacking]]
 
 # Notes
 Most systems are protected by firewalls restricting inbound traffic. A reverse shell bypasses this by making *outbound* connections from the system to a hacker-controlled one.

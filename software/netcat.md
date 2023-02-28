@@ -1,6 +1,8 @@
 ---
-tags: a/note
+aliases: nc
 ---
+is:: [[software]]
+from:: [[hacking]]
 in:: [[hacking tools]]
 
 # Notes

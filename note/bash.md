@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking]]
+is:: [[note]]
+from:: [[hacking]]
 
 # Notes
 Tricks with bash shell for hacking

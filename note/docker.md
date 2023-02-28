@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking]]
+is:: [[note]]
+from:: [[hacking]]
 
 # Notes
 Hints for exploring a docker image

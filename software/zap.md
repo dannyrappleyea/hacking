@@ -1,6 +1,5 @@
----
-tags: a/note
----
+is:: [[software]]
+from:: [[hacking]]
 in:: [[hacking tools]]
 
 # Notes

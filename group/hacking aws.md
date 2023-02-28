@@ -1,13 +1,7 @@
----
-tags: a/topic
----
-in:: [[hacking]]
-```breadcrumbs
-type: tree
-dir: down
-depth: -1
-from: -"_templates"
-```
+is:: [[group]]
+of:: [[note]]
+from:: [[hacking]]
+
 # Notes
 AWS hacking notes
 

@@ -1,6 +1,4 @@
----
-tags: a/note
----
+is:: [[note]]
 in:: [[hacking]]
 
 # Notes

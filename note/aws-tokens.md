@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking aws]]
+is:: [[note]]
+from:: [[hacking aws]]
 
 # Notes
 AWS access tokens are the keys to hacking AWS-based organizations. It is rare and difficult to get a username and password, and those are typically guarded by MFA. But access tokens are used EVERYWHERE.

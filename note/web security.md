@@ -1,7 +1,5 @@
----
-tags: a/note
----
-in:: [[hacking web services]]
+is:: [[note]]
+from:: [[hacking web services]]
 
 # Notes
 This looks at how browsers and html interact to provide web security, and approaches to attack them.
