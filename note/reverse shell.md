@@ -11,6 +11,7 @@ http://roo7break.co.uk/?p=215
 [lanmaster53.com](https://www.lanmaster53.com/2011/05/7-linux-shells-using-built-in-tools/)
  [http://laudanum.secureideas.net/](http://laudanum.secureideas.net/)
 http://pentestmonkey.net/blog/post-exploitation-without-a-tty
+https://gtfobins.github.io/#+reverse%20shell
 
 # Shell One-liners
 
