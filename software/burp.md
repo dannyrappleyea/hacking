@@ -8,6 +8,11 @@ in:: [[hacking tools]]
 # Notes
 Burp is an awesome tool for webapp testing.
 
+## Portswigger resources
+- [Getting started with Burp Suite](https://portswigger.net/burp/documentation/desktop/getting-started)
+- [Web Security Acadamy](https://portswigger.net/web-security/dashboard)
+- [Support Center](https://portswigger.net/support)
+
 ## API Scanning
 https://portswigger.net/burp/documentation/desktop/scanning/api-scanning
 
@@ -15,7 +20,7 @@ https://portswigger.net/burp/documentation/desktop/scanning/api-scanning
 chmod 755 ./burpsuite_pro_linux_v2020_12_1.sh
 sudo ./burpsuite_pro_linux_v2020_12_1.sh
 
-## Keep out-of-scopy items out of Proxy history
+## Keep out-of-scope items out of Proxy history
 Don't send items to Proxy history, if out of scope
 
 ## Favorite Extensions
