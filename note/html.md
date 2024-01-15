@@ -2,6 +2,8 @@ is:: [[note]]
 from:: [[hacking web services]]
 
 # Notes
+- Can test html snippets at https://htmledit.squarefree.com/
+
 Writing Into HTML DOM
 
 ```
