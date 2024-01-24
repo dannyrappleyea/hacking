@@ -4,6 +4,16 @@ from:: [[hacking aws]]
 # Notes
 AWS S3
 
+Listing all buckets
+```
+aws s3api list-buckets --query "Buckets[].Name"
+```
+
+Copy file to a bucket
+```
+aws s3 cp myfile.txt s3://mybucket/myfile.txt
+```
+
 ## REST endpoints
 Virtual hosted-style dual-stack endpoint:
     {bucketname}.s3.{aws-region}.amazonaws.com

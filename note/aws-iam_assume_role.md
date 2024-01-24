@@ -115,6 +115,11 @@ echo "Instance role is ${ROLE_NAME}"
 curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/${ROLE_NAME}/
 ```
 
+Not sure how instance credentials are different
+```
+curl -s http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance
+```
+
  Escalation Permissions
 These are permissions that allow privilege escalation, though some are limited or require special circumstances.
 
