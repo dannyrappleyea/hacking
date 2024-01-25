@@ -1,6 +1,7 @@
-is:: [[note]]
-in:: [[hacking]]
-
+---
+is: "[[note]]"
+in: "[[hacking]]"
+---
 # Notes
 A vulnerable web server to learn webapp hacking.
 

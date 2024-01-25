@@ -1,7 +1,8 @@
-is:: [[software]]
-from:: [[hacking]]
-in:: [[hacking tools]]
-
+---
+is: "[[software]]"
+of: "[[hacking]]"
+in: "[[hacking tools]]"
+---
 # Notes
 Recon-ng is a pentest reconnaissance tool for a blackbox approach.
 

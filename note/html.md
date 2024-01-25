@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking web services]]
-
+---
+is: "[[note]]"
+of: "[[hacking web services]]"
+---
 # Notes
 - Can test html snippets at https://htmledit.squarefree.com/
 

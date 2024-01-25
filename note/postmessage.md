@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking web services]]
-
+---
+is: "[[note]]"
+of: "[[hacking web services]]"
+---
 # Notes
 Postmessage
 

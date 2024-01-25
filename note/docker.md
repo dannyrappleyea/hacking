@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking]]
-
+---
+is: "[[note]]"
+of: "[[hacking]]"
+---
 # Notes
 Hints for exploring a docker image
 

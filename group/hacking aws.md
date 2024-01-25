@@ -1,7 +1,8 @@
-is:: [[group]]
-of:: [[note]]
-from:: [[hacking]]
-
+---
+is: "[[group]]"
+of: "[[note]]"
+of: "[[hacking]]"
+---
 # Notes
 AWS hacking notes
 

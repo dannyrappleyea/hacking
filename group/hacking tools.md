@@ -1,3 +1,5 @@
-is:: [[group]]
-of:: [[software]]
-from:: [[hacking]]
+---
+is: "[[group]]"
+of: "[[software]]"
+of: "[[hacking]]"
+---

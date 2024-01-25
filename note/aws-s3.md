@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking aws]]
-
+---
+is: "[[note]]"
+of: "[[hacking aws]]"
+---
 # Notes
 AWS S3
 

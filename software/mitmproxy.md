@@ -1,7 +1,8 @@
-is:: [[software]]
-from:: [[hacking]]
-in:: [[hacking tools]]
-
+---
+is: "[[software]]"
+of: "[[hacking]]"
+in: "[[hacking tools]]"
+---
 # Notes
 Tool to create a man-in-the-middle proxy to manipulate traffic using python.
 

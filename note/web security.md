@@ -1,7 +1,8 @@
-is:: [[note]]
-from:: [[security]]
-from:: [[hacking web services]]
-
+---
+is: "[[note]]"
+of: "[[security]]"
+of: "[[hacking web services]]"
+---
 # Notes
 This looks at how browsers and html interact to provide web security, and approaches to attack them.
 

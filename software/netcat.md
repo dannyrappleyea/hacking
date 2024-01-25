@@ -1,10 +1,9 @@
 ---
+is: "[[software]]"
+of: "[[hacking]]"
+in: "[[hacking tools]]"
 aliases: nc
 ---
-is:: [[software]]
-from:: [[hacking]]
-in:: [[hacking tools]]
-
 # Notes
 Basic Netcat listener
 

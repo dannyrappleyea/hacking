@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking]]
-
+---
+is: "[[note]]"
+of: "[[hacking]]"
+---
 # Notes
 Tricks with bash shell for hacking
 

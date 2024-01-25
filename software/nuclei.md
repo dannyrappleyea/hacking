@@ -1,7 +1,8 @@
-is:: [[software]]
-from:: [[hacking]]
-in:: [[hacking tools]]
-
+---
+is: "[[software]]"
+of: "[[hacking]]"
+in: "[[hacking tools]]"
+---
 # Notes
 Nuclei is an open-source, extensible vulnerability scanner
 

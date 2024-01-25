@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking]]
-
+---
+is: "[[note]]"
+of: "[[hacking]]"
+---
 # Notes
 Most systems are protected by firewalls restricting inbound traffic. A reverse shell bypasses this by making *outbound* connections from the system to a hacker-controlled one.
 

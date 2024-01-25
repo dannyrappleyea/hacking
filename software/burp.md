@@ -1,10 +1,9 @@
 ---
+is: "[[software]]"
+of: "[[hacking]]"
+in: "[[hacking tools]]"
 aliases: burp suite professional
 ---
-is:: [[software]]
-from:: [[hacking]]
-in:: [[hacking tools]]
-
 # Notes
 Burp is an awesome tool for webapp testing.
 

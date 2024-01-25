@@ -1,7 +1,8 @@
-is:: [[software]]
-from:: [[hacking]]
-in:: [[hacking tools]]
-
+---
+is: "[[software]]"
+of: "[[hacking]]"
+in: "[[hacking tools]]"
+---
 # Notes
 [Ngrok](https://ngrok.com/) is an awesome tool to expose an internet-accessible service, using software running on your local machine (behind a firewall.)
 

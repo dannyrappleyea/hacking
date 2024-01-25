@@ -1,7 +1,8 @@
-is:: [[software]]
-from:: [[hacking]]
-in:: [[hacking tools]]
-
+---
+is: "[[software]]"
+of: "[[hacking]]"
+in: "[[hacking tools]]"
+---
 # Notes
 https://github.com/projectdiscovery/interactsh
 - **Interactsh** is an open-source tool for detecting out-of-band interactions. It is a tool designed to detect vulnerabilities that cause external interactions.

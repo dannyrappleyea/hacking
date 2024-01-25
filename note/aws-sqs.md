@@ -1,7 +1,8 @@
-is:: [[note]]
-from:: [[hacking]]
-in:: 
-
+---
+is: "[[note]]"
+of: "[[hacking]]"
+in: 
+---
 # Notes
 ## Permissions
 - https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-using-identity-based-policies.html

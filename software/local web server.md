@@ -1,8 +1,9 @@
-is:: [[software]]
-from:: [[hacking]]
-from:: [[web server]]
-in:: [[hacking tools]]
-
+---
+is: "[[software]]"
+of: "[[hacking]]"
+of: "[[web server]]"
+in: "[[hacking tools]]"
+---
 # Notes
 Local web server
 

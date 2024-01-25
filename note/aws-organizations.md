@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking aws]]
-
+---
+is: "[[note]]"
+of: "[[hacking aws]]"
+---
 # Notes
 AWS Organizations are used to manage large numbers of AWS accounts grouped in a heirarchy.
 * Root: Parent account and container

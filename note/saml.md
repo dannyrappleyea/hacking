@@ -1,6 +1,7 @@
-is:: [[note]]
-from:: [[hacking web services]]
-
+---
+is: "[[note]]"
+of: "[[hacking web services]]"
+---
 # Notes
 SAML is the defacto standard for distributed authentication, where many applications depend on a centralized authentication system. But it's a complicated standard, and tricky to implement perfectly. That leads to fun ways to exploit it.
 
