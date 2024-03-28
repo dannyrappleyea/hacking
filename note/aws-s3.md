@@ -15,6 +15,12 @@ Copy file to a bucket
 aws s3 cp myfile.txt s3://mybucket/myfile.txt
 ```
 
+Sync a folder with a bucket
+- https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
+```
+aws s3 sync . s3://mybucket
+```
+
 ## REST endpoints
 Virtual hosted-style dual-stack endpoint:
     {bucketname}.s3.{aws-region}.amazonaws.com
