@@ -21,6 +21,10 @@ Sync a folder with a bucket
 aws s3 sync . s3://mybucket
 ```
 
+Check what files will be sync'd
+```
+aws s3 sync --dryrun . s3://mybucket
+```
 ## REST endpoints
 Virtual hosted-style dual-stack endpoint:
     {bucketname}.s3.{aws-region}.amazonaws.com
