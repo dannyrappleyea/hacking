@@ -1,6 +1,6 @@
 ---
 is_a: "[[note]]"
-of: "[[hacking aws]]"
+topics: "[[hacking aws]]"
 ---
 # Notes
 AWS S3

@@ -1,6 +1,6 @@
 ---
 is_a: "[[note]]"
-of: "[[hacking web services]]"
+topics: "[[hacking web services]]"
 ---
 # Notes
 Node.js

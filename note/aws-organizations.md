@@ -1,6 +1,6 @@
 ---
 is_a: "[[note]]"
-of: "[[hacking aws]]"
+topics: "[[hacking aws]]"
 ---
 # Notes
 AWS Organizations are used to manage large numbers of AWS accounts grouped in a heirarchy.

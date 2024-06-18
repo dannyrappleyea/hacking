@@ -1,6 +1,6 @@
 ---
 is_a: "[[note]]"
-of: "[[hacking aws]]"
+topics: "[[hacking aws]]"
 ---
 # Notes
 AWS access tokens are the keys to hacking AWS-based organizations. It is rare and difficult to get a username and password, and those are typically guarded by MFA. But access tokens are used EVERYWHERE.

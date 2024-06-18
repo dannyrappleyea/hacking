@@ -53,7 +53,7 @@ oclhashcat-plus 0.9
 
 ## Markov Bruteforce attack mode - increments from 1 to 8 chars
 is_a: "[[software]]"
-of: "[[hacking]]"
+topics: "[[hacking]]"
 in: "[[hacking tools]]"
 ./cudaHashcat-plus64.bin -m 1100 --attack-mode=3 -i --increment-min=1 --increment-max=8 --outfile=FILE <file.txt> --outfile-format=3 ?a?a?a?a?a?a?a?a
 oclHashcat-plus64.bin -m 1100 --attack-mode=3 -i --increment-min=1 --increment-max=8 --outfile=FILE <file.txt> --outfile-format=3 ?a?a?a?a?a?a?a?a

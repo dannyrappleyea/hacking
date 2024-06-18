@@ -1,6 +1,6 @@
 ---
 is_a: "[[note]]"
-of: "[[hacking]]"
+topics: "[[hacking]]"
 ---
 # Notes
 Talking to a smtp server

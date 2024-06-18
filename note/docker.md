@@ -1,6 +1,6 @@
 ---
 is_a: "[[note]]"
-of: "[[hacking]]"
+topics: "[[hacking]]"
 ---
 # Notes
 Hints for exploring a docker image

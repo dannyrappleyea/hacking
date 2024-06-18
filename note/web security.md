@@ -1,7 +1,7 @@
 ---
 is_a: "[[note]]"
-of: "[[security]]"
-of: "[[hacking web services]]"
+topics: "[[security]]"
+topics: "[[hacking web services]]"
 ---
 # Notes
 This looks at how browsers and html interact to provide web security, and approaches to attack them.

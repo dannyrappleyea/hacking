@@ -1,6 +1,6 @@
 ---
 is_a: "[[note]]"
-of: "[[hacking web services]]"
+topics: "[[hacking web services]]"
 ---
 # Notes
 Web software is adopting an API-centric approach. These APIs are frequently documented using OpenAPI (the new name for Swagger docs). This can be fed into pentest tools to help automate testing.
