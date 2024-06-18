@@ -1,5 +1,5 @@
 ---
-is: "[[group]]"
+is_a: "[[group]]"
 of: "[[note]]"
 of: "[[hacking]]"
 ---

@@ -1,5 +1,5 @@
 ---
-is:
+is_a:
   - "[[note]]"
 ---
 # Notes

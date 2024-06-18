@@ -1,5 +1,5 @@
 ---
-is: "[[software]]"
+is_a: "[[software]]"
 of: "[[hacking]]"
 of: "[[web server]]"
 in: "[[hacking tools]]"

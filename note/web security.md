@@ -1,5 +1,5 @@
 ---
-is: "[[note]]"
+is_a: "[[note]]"
 of: "[[security]]"
 of: "[[hacking web services]]"
 ---

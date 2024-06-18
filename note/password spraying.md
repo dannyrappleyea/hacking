@@ -1,5 +1,5 @@
 ---
-is: "[[note]]"
+is_a: "[[note]]"
 from: 
 in: 
 ---

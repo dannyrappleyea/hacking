@@ -1,5 +1,5 @@
 ---
-is: "[[software]]"
+is_a: "[[software]]"
 of: "[[hacking]]"
 in: "[[hacking tools]]"
 aliases: burp suite professional
