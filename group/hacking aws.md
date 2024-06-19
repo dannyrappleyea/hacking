@@ -1,7 +1,8 @@
 ---
 is_a: "[[group]]"
-topics: "[[note]]"
-topics: "[[hacking]]"
+topics:
+  - "[[note]]"
+  - "[[hacking]]"
 ---
 # Notes
 AWS hacking notes

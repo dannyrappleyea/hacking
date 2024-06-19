@@ -1,7 +1,8 @@
 ---
 is_a: "[[software]]"
-topics: "[[hacking]]"
-topics: "[[web server]]"
+topics:
+  - "[[hacking]]"
+  - "[[web server]]"
 in: "[[hacking tools]]"
 ---
 # Notes
